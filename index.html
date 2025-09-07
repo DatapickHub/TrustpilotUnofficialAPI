@@ -57,16 +57,18 @@
   <pre class="bg-gray-800 text-gray-100 p-6 rounded-lg overflow-x-auto">
 <code>import requests
 
-identifyingName = "www.nike.com"  # Replace with real identifyingName e=www.nike.com' 
-url = f"https://trustpilot14.p.rapidapi.com/business-reviews?identifyingName={identifyingName}"
+url = "https://trustpilot14.p.rapidapi.com/reviews"
+
+querystring = {"identifyingName":"www.nike.com"}
+
 headers = {
-    "X-RapidAPI-Key": "YOUR_RAPIDAPI_KEY",
-    "X-RapidAPI-Host": "trustpilot14.p.rapidapi.com"
+	"x-rapidapi-key": "0b389cd7ffmsh2feb1442d81e40ep1ef419jsn441b40f22d7d",
+	"x-rapidapi-host": "trustpilot14.p.rapidapi.com"
 }
 
-response = requests.get(url, headers=headers)
+response = requests.get(url, headers=headers, params=querystring)
+
 print(response.json())
-  </pre>
 </section>
 
 
