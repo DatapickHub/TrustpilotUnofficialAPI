@@ -10,7 +10,12 @@
   <!-- Header -->
   <header class="bg-white shadow-md">
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-indigo-600">Business Reviews API</h1>
+      <div class="flex items-center space-x-2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Trustpilot_Logo.svg" 
+             alt="Trustpilot Logo" class="h-6">
+        <h1 class="text-xl font-bold text-indigo-600">Business Reviews API</h1>
+        <span class="ml-1 text-gray-500 text-sm">(Unofficial)</span>
+      </div>
       <a href="https://rapidapi.com/datapick/api/trustpilot14/" target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-700">Try on RapidAPI</a>
     </div>
   </header>
@@ -23,7 +28,6 @@
     </p>
     <a href="https://rapidapi.com/datapick/api/trustpilot14/" target="_blank" class="bg-indigo-600 text-white px-6 py-3 rounded-xl shadow hover:bg-indigo-700">Get Started</a>
   </section>
-
 
   <!-- Features -->
   <section class="bg-white py-16">
@@ -45,41 +49,28 @@
       </div>
     </div>
   </section>
-	<div class="flex items-center justify-center mb-4">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Trustpilot_Logo.svg" 
-     alt="Trustpilot Logo" 
-     class="h-8">
 
-
-  <span class="ml-2 text-gray-600 text-sm">()</span>
-</div>
-
-
-
-  
   <!-- Quick Start -->
-<section class="max-w-6xl mx-auto px-6 py-16 bg-gray-100 rounded-2xl">
-  <h3 class="text-2xl font-bold text-center mb-6">Quick Start</h3>
-  <p class="text-gray-600 text-center mb-4">
-    Use this code snippet to fetch reviews from the Trustpilot API.
-  </p>
-  <pre class="bg-gray-800 text-gray-100 p-6 rounded-lg overflow-x-auto">
+  <section class="max-w-6xl mx-auto px-6 py-16 bg-gray-100 rounded-2xl">
+    <h3 class="text-2xl font-bold text-center mb-6">Quick Start</h3>
+    <p class="text-gray-600 text-center mb-4">
+      Use this code snippet to fetch reviews from the Trustpilot API.
+    </p>
+    <pre class="bg-gray-800 text-gray-100 p-6 rounded-lg overflow-x-auto">
 <code>import requests
 
 url = "https://trustpilot14.p.rapidapi.com/reviews"
-
 querystring = {"identifyingName":"www.nike.com"}
 
 headers = {
-	"x-rapidapi-key": "0b389cd7ffmsh2feb1442d81e40ep1ef419jsn441b40f22d7d",
-	"x-rapidapi-host": "trustpilot14.p.rapidapi.com"
+  "x-rapidapi-key": "YOUR_RAPIDAPI_KEY",
+  "x-rapidapi-host": "trustpilot14.p.rapidapi.com"
 }
 
 response = requests.get(url, headers=headers, params=querystring)
-
-print(response.json())
-</section>
-
+print(response.json())</code>
+    </pre>
+  </section>
 
   <!-- Use Cases -->
   <section class="max-w-6xl mx-auto px-6 py-16">
