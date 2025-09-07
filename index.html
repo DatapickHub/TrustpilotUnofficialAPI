@@ -72,11 +72,15 @@ print(response.json())</code>
   <pre class="bg-gray-800 text-gray-100 p-6 rounded-lg overflow-x-auto">
 <code>import requests
 
-business_id = "your-business-id"  # Replace with real business ID
-url = f"https://api.datapickhub.com/business/{business_id}/reviews"
+business_id = "identifyingName"  # Replace with real identifyingName e=www.nike.com' 
+url = f"https://trustpilot14.p.rapidapi.com/business-reviews?identifyingName={identifyingName}"
+headers = {
+    "X-RapidAPI-Key": "YOUR_RAPIDAPI_KEY",
+    "X-RapidAPI-Host": "trustpilot14.p.rapidapi.com"
+}
 
-response = requests.get(url)
-print(response.json())</code>
+response = requests.get(url, headers=headers)
+print(response.json())
   </pre>
 </section>
 
