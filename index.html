@@ -23,6 +23,22 @@
     </p>
     <a href="https://rapidapi.com/datapick/api/trustpilot14/" target="_blank" class="bg-indigo-600 text-white px-6 py-3 rounded-xl shadow hover:bg-indigo-700">Get Started</a>
   </section>
+<!-- Quick Start -->
+<section class="max-w-6xl mx-auto px-6 py-16 bg-gray-100 rounded-2xl">
+  <h3 class="text-2xl font-bold text-center mb-6">Quick Start</h3>
+  <p class="text-gray-600 text-center mb-4">
+    Use this code snippet to fetch reviews from the Unofficial Trustpilot API. Replace <code>business_id</code> with the ID of the business you want to query.
+  </p>
+  <pre class="bg-gray-800 text-gray-100 p-6 rounded-lg overflow-x-auto">
+<code>import requests
+
+business_id = "your-business-id"  # Replace with real business ID
+url = f"https://api.datapickhub.com/business/{business_id}/reviews"
+
+response = requests.get(url)
+print(response.json())</code>
+  </pre>
+</section>
 
   <!-- Features -->
   <section class="bg-white py-16">
